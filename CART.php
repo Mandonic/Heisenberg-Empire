@@ -9,10 +9,11 @@
 	<link href="style2.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Bootstrap CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <!--Font awesome-->
-<script src="https://use.fontawesome.com/7f59559ac5.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+
 </head>
 <body>
 <!--nav bar-->
@@ -42,16 +43,20 @@
 <div class="container">
     <div class="row text-center py-5">
         <div class="col-md-3 col-sm-6 my-3 my-md-0">
-            <form action="CART.php method="post">
+            <form action="CART.php" method="post">
             <div class="card shadow">
                 <div>
                     <img src="./how to cook meth unedited.jpg" class="img-fluid card-img-top">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Product1</h5>
-                    <h6>
-                        <i class="fas fa-star"></i>
-                    </h6>
+                <p class="card-text"> Some quick text</p>
+                <h5>
+                    <small><s class="text-secondry">300 RM </s></small>
+                    <span class="price">250 RM</span>
+                </h5>
+              <button type="submit"class="btn btn-warning my-3"name="add">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+
                 </div>
             </div>
         
