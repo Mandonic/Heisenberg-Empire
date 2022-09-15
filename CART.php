@@ -12,6 +12,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <!--Font awesome-->
 <script src="https://use.fontawesome.com/7f59559ac5.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
 <!--nav bar-->
@@ -55,8 +56,7 @@
             </div>
         
         </form>
-
-        </div>
+    </div>
         <div class="col-md-3 col-sm-6 my-3 my-md-0">
 
         </div>
