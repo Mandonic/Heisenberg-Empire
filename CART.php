@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Shopping Cart</title>
+	<title>Courses</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
 	<link href="style2.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!--Font awesome-->
+<script src="https://use.fontawesome.com/7f59559ac5.js"></script>
 </head>
 <body>
 <!--nav bar-->
-<header>
+<div class="header">
         <input type ="checkbox" name ="" id ="chk1">
         <div class="logo"><h1><img src="Logo.png" width="100px"></h1></div>
             <div class="search-box">
@@ -33,7 +37,38 @@
                     <i class="fa fa-bars"></i>
                 </label>
             </div>
-</header>
+            </div>
+<div class="container">
+    <div class="row text-center py-5">
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+            <form action="CART.php method="post">
+            <div class="card shadow">
+                <div>
+                    <img src="./how to cook meth unedited.jpg" class="img-fluid card-img-top">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Product1</h5>
+                    <h6>
+                        <i class="fas fa-star"></i>
+                    </h6>
+                </div>
+            </div>
+        
+        </form>
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+        </div>
+    </div>
+</div>
+
 
 
 
