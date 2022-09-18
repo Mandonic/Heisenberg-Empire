@@ -1,3 +1,10 @@
+<?php
+
+require_once("component.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,151 +49,18 @@
             </div>
 <div class="container">
     <div class="row text-center py-5">
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-            <form action="CART.php" method="post">
-            <div class="card shadow">
-                <div>
-                    <img src="./how to cook meth unedited.jpg" class="img-fluid card-img-top">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">How To Cook Crystal Meth</h5>
-                <p class="card-text"> Tutor: Walter White</p>
-                <h5>
-                    <small><s class="text-secondry">300 RM </s></small>
-                    <span class="price">250 RM</span>
-                </h5>
-              <button type="submit"class="btn btn-warning my-3"name="add">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+    <?php
+    component("How To Cook Crystal Meth","250","Walter White","./how to cook meth unedited.jpg");
+    component("How To Smuggle Meth","250","Jesse Pinkmann","./how to smuggle meth unedited.png");
+    component("How To Avoid Conflict","250","Saul Goodmann","./how to avoid conflict unedited.jpg");
+    component("How To Avoid Hank","150","Gustavo","./how to avoid hank unedited.png");
+    component("How to Divorce Your Wife After Getting Rich","250","Walter White","./how to divorce your wife after getting rich.jpg");
+    component("How To Get Rid of Your Son","200","Walter White","./how to get rid of ur son unedited.jpg");
+    component("How To Make Money","250","Jesse Pinkmann","./how to make money unedited.jpg");
 
-                </div>
-            </div>
-        
-        </form>
+    component("How To Bankrupt Your Man","250","Saul Goodmann","./skyler.jpg")
+    ?>
     </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="CART.php" method="post">
-            <div class="card shadow">
-                <div>
-                    <img src="./how to smuggle meth unedited.png" class="img-fluid card-img-top">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">How To Smuggle Meth</h5>
-                <p class="card-text">Tutor: Jesse Pinkmann</p>
-                <h5>
-                    <small><s class="text-secondry">300 RM </s></small>
-                    <span class="price">250 RM</span>
-                </h5>
-              <button type="submit"class="btn btn-warning my-3"name="add">Add to Cart<i class="fas fa-shopping-cart"></i></button>
-
-                </div>
-            </div>
-        
-        </form>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="CART.php" method="post">
-            <div class="card shadow">
-                <div>
-                    <img src="./how to avoid conflict unedited.jpg" class="img-fluid card-img-top">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">How To Avoid Conflict</h5>
-                <p class="card-text">Tutor: Saul Goodmann</p>
-                <h5>
-                    <small><s class="text-secondry">300 RM </s></small>
-                    <span class="price">250 RM</span>
-                </h5>
-              <button type="submit"class="btn btn-warning my-3"name="add">Add to Cart<i class="fas fa-shopping-cart"></i></button>
-
-                </div>
-            </div>
-        
-        </form>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="CART.php" method="post">
-            <div class="card shadow">
-                <div>
-                    <img src="./how to avoid hank unedited.png" class="img-fluid card-img-top">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">How To Avoid Hank</h5>
-                <p class="card-text"> Tutor: Gustavo</p>
-                <h5>
-                    <small><s class="text-secondry">300 RM </s></small>
-                    <span class="price">250 RM</span>
-                </h5>
-              <button type="submit"class="btn btn-warning my-3"name="add">Add to Cart<i class="fas fa-shopping-cart"></i></button>
-
-                </div>
-            </div>
-        
-        </form>
-
-        </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="CART.php" method="post">
-            <div class="card shadow">
-                <div>
-                    <img src="./how to divorce your wife after getting rich.jpg" class="img-fluid card-img-top">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">How to Divorce Your Wife After Getting Rich</h5>
-                <p class="card-text">Tutor: Walter White</p>
-                <h5>
-                    <small><s class="text-secondry">300 RM </s></small>
-                    <span class="price">250 RM</span>
-                </h5>
-              <button type="submit"class="btn btn-warning my-3"name="add">Add to Cart<i class="fas fa-shopping-cart"></i></button>
-
-                </div>
-            </div>
-        
-        </form>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="CART.php" method="post">
-            <div class="card shadow">
-                <div>
-                    <img src="./how to get rid of ur son unedited.jpg" class="img-fluid card-img-top">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">How To Get Rid of Your Son</h5>
-                <p class="card-text">Tutor: Walter White</p>
-                <h5>
-                    <small><s class="text-secondry">300 RM </s></small>
-                    <span class="price">250 RM</span>
-                </h5>
-              <button type="submit"class="btn btn-warning my-3"name="add">Add to Cart<i class="fas fa-shopping-cart"></i></button>
-
-                </div>
-            </div>
-        
-        </form>
-
-        </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="CART.php" method="post">
-            <div class="card shadow">
-                <div>
-                    <img src="./how to make money unedited.jpg" class="img-fluid card-img-top">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">How To Make Money</h5>
-                <p class="card-text">Tutor:Jesse Pinkmann</p>
-                <h5>
-                    <small><s class="text-secondry">300 RM </s></small>
-                    <span class="price">250 RM</span>
-                </h5>
-              <button type="submit"class="btn btn-warning my-3"name="add">Add to Cart<i class="fas fa-shopping-cart"></i></button>
-
-                </div>
-            </div>
-        
-        </form>
-        </div>
-    </div>
-</div>
-
 
 
 
