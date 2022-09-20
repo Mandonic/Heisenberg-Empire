@@ -1,6 +1,51 @@
 <?php
 
+session_start();
+
+
+
 require_once("component.php");
+require_once("CreateDb.php");
+
+
+//create instance of Createdbclass
+$database = new CreateDb("Productdb", "Producttb");
+
+if (isset($_POST['add'])){
+    /// print_r($_POST['product_id']);
+    if(isset($_SESSION['cart'])){
+
+        $item_array_id = array_column($_SESSION['cart'], "product_id");
+
+        if(in_array($_POST['product_id'], $item_array_id)){
+            echo "<script>alert('Product is already added in the cart..!')</script>";
+            echo "<script>window.location = 'CART.php'</script>";
+        }else{
+
+            $count = count($_SESSION['cart']);
+            $item_array = array(
+                'product_id' => $_POST['product_id']
+            );
+
+            $_SESSION['cart'][$count] = $item_array;
+        }
+
+    }else{
+
+        $item_array = array(
+                'product_id' => $_POST['product_id']
+        );
+
+        // Create new session variable
+        $_SESSION['cart'][0] = $item_array;
+        print_r($_SESSION['cart']);
+    }
+}
+
+
+
+
+
 
 ?>
 
@@ -23,42 +68,17 @@ require_once("component.php");
 
 </head>
 <body>
-<!--nav bar-->
-<div class="header">
-        <input type ="checkbox" name ="" id ="chk1">
-        <div class="logo"><h1><img src="Logo.png" width="100px"></h1></div>
-            <div class="search-box">
-                <form>
-                    <input type ="text" name ="search" id ="srch" placeholder="Search">
-                    <button type ="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <ul>
-                <li><a href="#Home.html">Home</a></li>
-                <li><a href="#Courses.html">Courses</a></li>
-                <li><a href="#About Us.html">About Us</a></li>
-                <li><a href="#Profile.html">Profile</a></li>
-                <li><a href="#Contact.html">Contact</a></li>
-                <li><a href="#Cart.html"> <img src="basket-cart-icon-27.png" width="20px" display="block" alt="Cart"> </a></li>
-            </ul>
-            <div class="menu">
-                <label for="chk1">
-                    <i class="fa fa-bars"></i>
-                </label>
-            </div>
-            </div>
+
+
+<?php require_once ("header.php"); ?>
 <div class="container">
     <div class="row text-center py-5">
     <?php
-    component("How To Cook Crystal Meth","250","Walter White","./how to cook meth unedited.jpg");
-    component("How To Smuggle Meth","250","Jesse Pinkmann","./how to smuggle meth unedited.png");
-    component("How To Avoid Conflict","250","Saul Goodmann","./how to avoid conflict unedited.jpg");
-    component("How To Avoid Hank","150","Gustavo","./how to avoid hank unedited.png");
-    component("How to Divorce Your Wife After Getting Rich","250","Walter White","./how to divorce your wife after getting rich.jpg");
-    component("How To Get Rid of Your Son","200","Walter White","./how to get rid of ur son unedited.jpg");
-    component("How To Make Money","250","Jesse Pinkmann","./how to make money unedited.jpg");
-
-    component("How To Bankrupt Your Man","250","Saul Goodmann","./skyler.jpg")
+     $result = $database->getData();
+     while ($row = mysqli_fetch_assoc($result)){
+         component($row['product_name'], $row['product_price'],$row['product_tutor'], $row['product_image'], $row['id']);
+     }
+   
     ?>
     </div>
 
