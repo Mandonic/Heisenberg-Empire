@@ -37,7 +37,7 @@ if (isset($_POST['remove'])){
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body class="bg-light">
 
@@ -51,6 +51,7 @@ if (isset($_POST['remove'])){
             <div class="shopping-cart">
                 <h6>My Cart</h6>
                 <hr>
+
 
                 <?php
 
@@ -108,6 +109,8 @@ if (isset($_POST['remove'])){
         </div>
     </div>
 </div>
+
+
 
 
 
