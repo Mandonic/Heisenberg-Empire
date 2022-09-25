@@ -1,16 +1,13 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <aside aria-label="Slider Area">
 	<head>
-		<meta charset="UTF-8">
 		<title>Heisenberg Empire</title>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet">
+		<link href="homepage.css" rel="stylesheet">
 	</head>
 	<body>
 		<section class="fwh-slide1">
@@ -23,19 +20,13 @@
 				<header>
 					<input type ="checkbox" name ="" id ="chk1">
 					<div class="logo"><h1><img src="images/Logo.png" width="100px"></h1></div>
-						<div class="search-box">
-							<form>
-								<input type ="text" name ="search" id ="srch" placeholder="Search">
-								<button type ="submit"><i class="fa fa-search"></i></button>
-							</form>
-						</div>
 						<ul>
-							<li><a href="#Home.html">Home</a></li>
-							<li><a href="#Courses.html">Courses</a></li>
-							<li><a href="#About Us.html">About Us</a></li>
-							<li><a href="#Profile.html">Profile</a></li>
-							<li><a href="#Contact.html">Contact</a></li>
-							<li><a href="#Cart.html"> <img src="images/basket-cart-icon-27.png" width="20px" display="block" alt="Cart"> </a></li>
+							<li><a href="#Home.html" style="color:#fff;">Home</a></li>
+							<li><a href="http://localhost:8080/HEISENBERG-EMPIRE/CART.php" style="color:#fff;">Courses</a></li>
+							<li><a href="C:\xampp\htdocs\Heisenberg-Empire\pages\About us/about us.html" style="color:#fff;">About Us</a></li>
+							<li><a href="#Profile.html" style="color:#fff;">Profile</a></li>
+							<li><a href="mailto:abdo.mando1285@gmail.com" style="color:#fff;">Contact</a></li>
+							<li><a href="#Cart.html" style="color:#fff;"> <img src="images/basket-cart-icon-27.png" width="20px" display="block" alt="Cart"> </a></li>
 						</ul>
 						<div class="menu">
 							<label for="chk1">
@@ -48,7 +39,7 @@
 					<h1>Heisenberg Empire</h1>
 					<p>Your road to success starts here!</p>
 				<div class="user">
-					<button type="button">Explore Courses</button>
+					<button type="button" class="user">Explore Courses</button>
 				</div>
 			</div>
 		</section>
@@ -90,49 +81,49 @@
 	<div class="row">
 		<div class="column">
 			<div class="card">
-			<img src="images/Walter White.png" alt="Walter" style="width:200px">
+			<img src="images/Walter White.png" alt="Walter" style="width:200px; margin-top:10px;">
 			<div class="container">
 				<h2>Walter White</h2>
 				<p class="title">Chemist &amp; Professor</p>
-				<p>The famous Heisenberg! Created the secret crystal meth recipe</p>
-				<p>IAmTheDanger@gmail.com</p>
-				<p><button class="button">Contact</button></p>
+				<p class="MTT-p">The famous Heisenberg! Created the secret crystal meth recipe</p>
+				<p class="MTT-p">IAmTheDanger@gmail.com</p>
+				<p><a class="button" href="mailto:IAmTheDanger@gmail.com" style="text-decoration: none; color: #fff;">Contact</a></p>
 			</div>
 			</div>
 		</div>
 		<div class="column">
 			<div class="card">
-			<img src="images/Gustavo Fring.png" alt="Gus" style="width:200px">
+			<img src="images/Gustavo Fring.png" alt="Gus" style="width:200px; margin-top:10px;">
 			<div class="container">
 				<h2>Gustavo Fring</h2>
 				<p class="title">CEO of Los Pollos Hermanos</p>
-				<p>Founder of the business & Main distributor</p>
-				<p>LosPollosHermanos@gmail.com</p>
-				<p><button class="button">Contact</button></p>
+				<p class="MTT-p">Founder of the business & Main distributor, Do not mess around with him</p>
+				<p class="MTT-p">LosPollosHermanos@gmail.com</p>
+				<p><a class="button" href="mailto:LosPollosHermanos@gmail.com" style="text-decoration: none; color: #fff;">Contact</a></p>
 			</div>
 			</div>
 		</div>
 		<div class="column">
 			<div class="card">
-			<img src="images/Jesse Pinkman.png" alt="Jesse" style="width:200px">
+			<img src="images/Jesse Pinkman.png" alt="Jesse" style="width:200px; margin-top:10px;">
 			<div class="container">
 				<h2>Jesse Pinkman</h2>
 				<p class="title">Second Hand</p>
-				<p> It's a two mans job. Jesse pinkman is vital for the team</p>
-				<p>waassaapbiatch@gmail.com</p>
-				<p><button class="button">Contact</button></p>
+				<p class="MTT-p"> It's a two mans job. Jesse pinkman is vital for the team</p>
+				<p class="MTT-p">waassaapbiatch@gmail.com</p>
+				<p><a class="button" href="mailto:waassaapbiatch@gmail.com" style="text-decoration: none; color:#fff">Contact</a></p>
 			</div>
 			</div>
 		</div>
 		<div class="column">
 			<div class="card">
-				<img src="images/Saul Goodman.png" alt="Saul" style="width:200px">
+				<img src="images/Saul Goodman.png" alt="Saul" style="width:200px; margin-top:10px;">
 				<div class="container">
 				<h2>Saul Goodman</h2>
 				<p class="title">Lawyer & Money Laundering</p>
-				<p>Huge connections & simply nothing is impossible for this man</p>
-				<p>BetterCallSaul@gmail.com</p>
-				<p><button class="button">Contact</button></p>
+				<p class="MTT-p">Huge connections & simply nothing is impossible for this man</p>
+				<p class="MTT-p">BetterCallSaul@gmail.com</p>
+				<p><a class="button" href="mailto:BetterCallSaul@gmail.com" style="text-decoration: none; color:#fff">Contact</a></p>
 				</div>
 			</div>
 			</div>
@@ -140,6 +131,150 @@
 </aside>
 
 <aside aria-label="Reviews">
+	<h2 class="u-text1">Customer</h2>
+	<h1 class="u-text2">Feedback</h1>
+	<div class="outerdiv">
+		<div class="innerdiv">
+		  <div class="div1 eachdiv">
+			<div class="userdetails">
+			  <div class="imgbox">
+				<img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
+			  </div>
+			  <div class="detbox">
+				<p class="name">Daniel Clifford</p>
+				<p class="designation">Verified Graduate</p>
+			  </div>
+			</div>
+			<div class="review">
+			  <h4>I received a job offer mid-course, and the subjects I learned were AMAZING! I honestly feel I got every penny’s worth.</h4>
+			<p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+			</div>
+		  </div>
+		  <!-- div2 -->
+		  <div class="div2 eachdiv">
+			<div class="userdetails">
+			  <div class="imgbox">
+				<img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
+			  </div>
+			  <div class="detbox">
+				<p class="name">Jonathan Walters</p>
+				<p class="designation">Verified Graduate</p>
+			  </div>
+			</div>
+			<div class="review">
+			  <h4>The team was very supportive and kept me motivated</h4>
+			<p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+			</div>
+		  </div>
+		  <!-- div3 -->
+		  <div class="div3 eachdiv">
+			<div class="userdetails">
+			  <div class="imgbox">
+				<img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
+			  </div>
+			  <div class="detbox">
+				<p class="name dark">Kira Whittle</p>
+				<p class="designation dark">Verified Graduate</p>
+			  </div>
+			</div>
+			<div class="review dark">
+			  <h4>Such a life-changing experience. Highly recommended!</h4>
+			  <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of experience. It certainly helped me land a job as a full-stack 100% recommend! ”</p>
+			</div>
+		  </div>
+		  <!-- div4 -->
+		  <div class="div4 eachdiv">
+			<div class="userdetails">
+			  <div class="imgbox">
+				<img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
+			  </div>
+			  <div class="detbox">
+				<p class="name dark">Jeanette Harmon</p>
+				<p class="designation dark">Verified Graduate</p>
+			  </div>
+			</div>
+			<div class="review dark">
+			  <h4>An overall wonderful and rewarding experience</h4>
+			<p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+			</div>
+		  </div>
+		  <!-- div5 -->
+		  <div class="div5 eachdiv">
+			<div class="userdetails">
+			  <div class="imgbox">
+				<img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
+			  </div>
+			  <div class="detbox">
+				<p class="name">Patrick Abrams</p>
+				<p class="designation">Verified Graduate</p>
+			  </div>
+			</div>
+			<div class="review">
+			  <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h4>
+			<p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+</aside>
+
+<aside aria-label="Sponsors">
+	<footer>
+		<h2 class="u-text1">Our</h2>
+		<h1 class="u-text2">Sponsors</h1>
+		<div class="sponsor-images">
+			<img src="images/Los_Pollos.png" alt="LosPollosHermanos" width="20%">
+			<img src="images/Albuquerque_Police_Department_Patch.jpg" alt="Police" width="20%">
+			<img src="images/Better_Call_Saul_logo.svg.png" alt="BetterCallSaul" width="20%">
+			<img src="images/Cartel.png" alt="Cartel" width="25%">
+		</div>
+	</footer>
+</aside>
 	
+<aside aria-label="Footer-black">
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-2">
+					<img src="images/Logo.png">
+					<p>Broke? Not anymore <br> Debt? What's that? <br> Lifeless? We'll spice your life <br> No money to leave for the kids? Half a million sounds good? </p>
+					<p> Copyright ©2022 Heisenberg Empire | All rights reserved</p>
+					<ul class="copyright_links">
+						<li class="copyright_link">
+							<a target="_blank" href="https://www.amcnetworks.com/privacy-policy/">Privacy</a>
+						</li>
+						<li class="copyright_link">
+							<a target="_blank" href="https://www.amcnetworks.com/cookies/">Cookies</a>
+						</li>
+						<li class="copyright_link">
+							<a target="_blank" href="https://www.amcnetworks.com/terms-of-use/">Terms of Use</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col-1">
+					<h3>Best Sellers</h3>
+					<p>"List 4 Courses available with links to them"</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Websites</h3>
+					<ul class="footer-ul">
+						<li><a class="link" href="C:\Users\DELL\Desktop\Heisenberg-Empire\pages\About us/about us.html" target="_blank" style="text-decoration: none;">FAQ's</a></li>
+						<li><a class="link" href="https://www.instagram.com/tacobonitobrno/?hl=en" target="_blank" style="text-decoration: none;">Taco Bonito</a></li>
+						<li><a class="link" href="http://www.lphishiring.com/" target="_blank" style="text-decoration: none;">Los Pollos Hermanos</a></li>
+						<li><a class="link" href="http://bettercallsaul.amc.com/" target="_blank" style="text-decoration: none;" >Saul Goodman</a></li>
+						<li><a class="link" href="https://www.instagram.com/heisenberglookalike/" target="_blank" style="text-decoration: none;">Instagram</a></li>
+						<li><a class="link" href="https://www.youtube.com/watch?v=oHg5SJYRHA0&ab_channel=cotter548" target="_blank" style="text-decoration: none;" >Facebook</a></li>
+						<li><a class="link" href="https://twitter.com/MethEmpireDraws" target="_blank" style="text-decoration: none;">Twitter</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-3">
+					<h3>Contact Us</h3>
+					<ul class="footer-ul">
+						<li><a class="link" href="mailto:abdo.mando1285@gmail.com" target="_blank" style="text-decoration: none;">Have a question? <br> Contact us now!</a></li>
+						<p> 1139 Scenicview Drive <br> Big Spring <br> TX Texas 79720 <br> Telephone: 432-267-6745 <br> Mobile: 432-270-6707 <br> Fax: 432-289-1285</p>
+					</ul>
+				</div>
+</aside>
+
 </body>
 </html>

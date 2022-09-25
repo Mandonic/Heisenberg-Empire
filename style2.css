@@ -149,19 +149,15 @@ button {
         right: 0;
     }
 }
-
 img{
     max-width:100%;
     height:auto;
     background:lightskyblue;
     background:radial-gradient(white 30%);
-
 }
-
-
 .fa-star,
 .fa-star-half{
-    color:yellowgreen;
+    color: #569197;
     padding:3% 0;
 }
 
